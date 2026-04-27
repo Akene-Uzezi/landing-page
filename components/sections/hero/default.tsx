@@ -1,6 +1,7 @@
 import { type VariantProps } from "class-variance-authority";
 import { ArrowRightIcon } from "lucide-react";
 import { ReactNode } from "react";
+import appimage from "/app.png";
 
 import { cn } from "@/lib/utils";
 
@@ -34,8 +35,8 @@ export default function Hero({
   description = "Professionally designed blocks and templates built with React, Shadcn/ui and Tailwind that will help your product stand out.",
   mockup = (
     <Screenshot
-      srcLight="/placeholder-light.svg"
-      srcDark="/placeholder-dark.svg"
+      srcLight="./app.png"
+      srcDark="./app.png"
       alt="Launch UI app screenshot"
       width={1248}
       height={765}
@@ -47,7 +48,10 @@ export default function Hero({
       <span className="text-muted-foreground">
         New version of Launch UI is out!
       </span>
-      <a href="https://www.launchuicomponents.com/" className="flex items-center gap-1">
+      <a
+        href="https://www.launchuicomponents.com/"
+        className="flex items-center gap-1"
+      >
         Get started
         <ArrowRightIcon className="size-3" />
       </a>
